@@ -51,7 +51,7 @@ class Persona {
       generacion = "Generación Z";
       rasgo = "Irreverencia";
     } else {
-      generacion = "Sin registro de esta generación";
+      generacion = "generación sin registro";
       rasgo = "No se tiene información de esta generación";
     }
     alert(

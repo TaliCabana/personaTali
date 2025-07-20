@@ -25,11 +25,17 @@
     <main>
       <section class="container mt-2">
         <h1 class="display-5 text-center">Generaciones</h1>
-        <p>
+        <p class="lead">
           Completá el formulario para indicarte a qué generación correspondés y
           el rasgo característico de esta franja etaria. Además, se mostrará si
           sos o no mayor de edad 😊
         </p>
+        <ol>
+          <li>Completá el formulario.</li>
+          <li>Tocá el botón "Crear Persona".</li>
+          <li>Elegí cualquiera de los botones para descubrir info tuya 👀</li>
+          <li>Recargá la página para ingresar nuevos datos 🔄</li>
+        </ol>
         <div class="row justify-content-center">
           <div class="col-12 col-md-8 col-lg-6">
             <form id="formPersona">
@@ -68,8 +74,8 @@
                         class="form-control"
                         id="formDNI"
                         placeholder="44123456"
-                        minlength="8"
-                        maxlength="8"
+                        minlength="6"
+                        maxlength="9"
                         required
                       />
                       <label for="formDNI">DNI *</label>
@@ -86,7 +92,7 @@
                     <option selected>Elige una opción</option>
                     <option value="Hombre">Hombre</option>
                     <option value="Mujer">Mujer</option>
-                    <option value="No indicado">Prefieron no elegir</option>
+                    <option value="No indicado">Prefiero no elegir</option>
                   </select>
                   <label for="formSexo">Sexo</label>
                 </div>

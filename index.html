@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Generaciones" />
+    <meta name="author" content="Tali Cabana" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Generaciones 👶🏽🧑🏽🧓🏽</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Generaciones</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container mt-2">
+        <h1 class="display-5 text-center">Generaciones</h1>
+        <p>
+          Completá el formulario para indicarte a qué generación correspondés y
+          el rasgo característico de esta franja etaria. Además, se mostrará si
+          sos o no mayor de edad 😊
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <form>
+              <article>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="formNombre"
+                    placeholder="Nombre Apellido"
+                    minlength="2"
+                    maxlength="50"
+                    required
+                  />
+                  <label for="formNombre">Nombre completo *</label>
+                </div>
+                <div class="row g-2 mb-3">
+                  <div class="col-md">
+                    <div class="form-floating">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="floatingEdad"
+                        placeholder="Edad"
+                        minlength="1"
+                        maxlength="3"
+                        required
+                      />
+                      <label for="floatingEdad">Edad *</label>
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="formDNI"
+                        placeholder="44123456"
+                        minlength="8"
+                        maxlength="8"
+                        required
+                      />
+                      <label for="formDNI">DNI *</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <select
+                    class="form-select"
+                    id="floatingSexo"
+                    aria-label="Floating label select example"
+                  >
+                    <option selected>Elige una opción</option>
+                    <option value="1">Hombre</option>
+                    <option value="2">Mujer</option>
+                    <option value="3">Prefieron no elegir</option>
+                  </select>
+                  <label for="floatingSexo">Sexo</label>
+                </div>
+                <div class="row g-2 mb-3">
+                  <div class="col-md">
+                    <div class="form-floating">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="formPeso"
+                        placeholder="Peso"
+                        required
+                      />
+                      <label for="formPeso">Peso en [kg] *</label>
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div class="form-floating">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="formNombre"
+                        placeholder="Nombre Apellido"
+                        required
+                      />
+                      <label for="formNombre">Altura en [m] *</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="formAñoNacimiento"
+                    placeholder="Año de nacimiento"
+                    minlength="4"
+                    maxlength="4"
+                    required
+                  />
+                  <label for="formAñoNacimiento">Año de nacimiento *</label>
+                </div>
+                <p class="mt-3 mb-0">Los campos con (*) son obligatorios</p>
+              </article>
+              <div class="d-flex justify-content-end mb-2">
+                <button class="btn btn-info">Enviar</button>
+              </div>
+              <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+                <button type="submit" class="btn btn-rosa flex-grow-1">
+                  Crear Persona
+                </button>
+                <button
+                  type="button"
+                  id="btnGeneracion"
+                  class="btn btn-turquesa flex-grow-1"
+                >
+                  Mostrar Generación
+                </button>
+
+                <button
+                  type="button"
+                  id="btnMayor"
+                  class="btn btn-lila flex-grow-1"
+                >
+                  ¿Es mayor de edad?
+                </button>
+
+                <button
+                  type="button"
+                  id="btnDatos"
+                  class="btn btn-amarillo flex-grow-1"
+                >
+                  Mostrar Datos
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center py-3 bg-dark-subtle">
+      <p>&copy; Todos los derechos reservados</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/app.js"></script>
+  </body>
+</html>
